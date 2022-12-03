@@ -6,9 +6,10 @@ public class Main {
         //Задание 1-2
 
         int clientOS = 1;
-        int clientDeviceYear = 2014;
-        boolean OS = clientOS == 0;
-        if (OS) {
+        int IOS = 0;
+        int clientDeviceYear = 2016;
+        boolean OS = clientOS == IOS;
+        if (clientOS == IOS) {
             if (clientDeviceYear >= 2015) {
                 System.out.println("Установите версию приложения для IOS по ссылке");
             } else {
@@ -25,7 +26,7 @@ public class Main {
         //Задание 3
 
         int year = 2021;
-        if (year % 4 == 0) {
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             System.out.println(year + " Данный год високосный");
         } else {
             System.out.println(year + " Данный год не високосный");
